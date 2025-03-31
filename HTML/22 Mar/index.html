@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="color" name="" id="Color">
+    <div id="Ninput" style="width:200px;height: 200px;margin-left: 40%; border: 1px solid black; "></div>
+    <h1 id="hTag"></h1>
+    <input type="range" name="volume" id="vol" min="10" max="200" step="10"> 
+     <!-- min and max attribute are used to specify the range from min to max
+      -->
+    <script> 
+        const color = document.getElementById('Color');
+        const field = document.querySelector("#Ninput");
+        field.style.backgroundColor= localStorage.getItem('color');
+        color.addEventListener('input',()=>{
+            localStorage.setItem('color',`${color.value}`);
+            document.getElementById('hTag').innerHTML = localStorage.getItem('color');
+            field.style.backgroundColor= localStorage.getItem('color');
+        })
+
+
+        const volumeRange = document.querySelector("#vol");       
+        volumeRange.addEventListener('input',()=>{
+            document.getElementById('hTag').innerHTML = `${volumeRange.value}px`;
+            field.style.width = `${volumeRange.value}px`;
+        })
+    </script>
+</body>
+</html>

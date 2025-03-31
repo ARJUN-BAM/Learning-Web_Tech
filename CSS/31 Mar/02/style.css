@@ -1,0 +1,22 @@
+div{
+    background-color: red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: serif;
+    background-color: yellow;
+}
+
+.sel{
+    background-color: blue;
+}
+#a2 , #a3{
+    background-color: green !important;
+    /* inline css is used for the element id #a2 */
+}
+li>b{
+    color: blue;
+}

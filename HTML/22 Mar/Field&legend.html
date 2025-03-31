@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+       <fieldset>
+        <legend>Model of Your Car</legend>
+        <select name="Cars_Model" id="Cars">
+            <option value="">Select Your Model</option>
+            <option value="Audi">Audi</option>
+            <option value="LamboGini">LamboGini</option>
+            <option value="Ferra">Ferra</option>
+            <option value="RollsRoys">RollsRoys</option>
+            <option value="LandRover">LandRover</option>
+            <option value="Bently">Bently</option>
+            <option value="Mazareta">Mazareta</option>
+            <option value="Suzuki">Suzuki</option>
+            <option value="VolksVagan">VolksVagan</option>
+            <option value="Nissan GTR">Nissan GTR</option>
+        </select>
+        <h1 id="model">Cars Model : </h1>
+        <p><b>"Fieldset"</b> is used to make a border for a form. it covers the whole form. we use this tag inside the form tag and inside it make used input and submit tags inside fieldset.</p>
+       <p> <b>"Legend"</b> tag is used to give a Head Name used for identify what's the purpose of a form
+    </p>
+       </fieldset>
+    </form>
+   
+
+    
+
+    <script>
+        const model = document.getElementById('model') ;
+        const cars = document.getElementById('Cars');
+        cars.addEventListener('input',()=>{
+            model.innerHTML = `Cars Model : ${cars.value}`;
+        })
+    </script>
+</body>
+</html>
