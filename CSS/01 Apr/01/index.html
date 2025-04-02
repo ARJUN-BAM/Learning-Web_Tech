@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>combinator Selectors</h1>
+    <form action="">
+        <fieldset>
+            <legend>Combinator Selectors [ Working with relation ]</legend>
+            <ul>
+                <li><b>General Sibling</b> Selector is used to target the next tag inside a same element making the tag as sibling [ like blood related sibling ]. Example : Div~P {} </li>
+                <li><b>Adjecent Sibling</b> selector used for targeting the adjacent exactly next tag [ it's Exactly next ].   Example : Div+p {}</li>
+                <li><b>Child Selector</b>targets adjacent child tag consider having father-son relation being 1st generation child. Example: div>p{  }.  </li>
+                <li><b>Descendent</b> selector used to targets the all child tag from any generation.Example: div p{  }</li> 
+                <li> <b>Note:</b> The siblings are only consider when counting down not counting up.</li>
+            </ul>
+        </fieldset>
+    </form>
+
+<br>
+    <hr>
+    <h2>General Sibling and Adjacent Sibling</h2>
+
+    <div>Div 1</div>
+    <p> P 1 </p>
+    <section>Section</section>
+    <div>Div 2</div>
+    <p>P 2</p>
+    <hr>
+    
+
+    <footer>Code is just overlapping thats how you are getting this result check CSS to understand.</footer>
+    <h2>Child Selector & Descendent Selectors</h2>
+
+    <div>DivC 1
+        <p>PC 1</p>
+        <h1>H1C 1</h1>
+        <section> SectionC 1 <p>Sec_pc_1</p></section>
+        <p>PC 2</p>
+    </div>
+   
+    
+
+</body>
+</html>

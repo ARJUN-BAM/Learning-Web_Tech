@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+span{
+    font-weight: bold;
+}
+form>fieldset{
+    padding: 30px;
+    margin: 30px;
+}
+p::first-letter{
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+}
+p::first-line{
+    background-color: lightblue;
+}
+p::selection{
+    background-color: red;
+    color: white;
+}
+p::before{
+    background-color: red;
+    content:" this is ";
+    color: white;
+}
+p::after{
+    background-color: red;
+    content:" some text ";
+    color: white;
+}
+li::marker{
+    content: "🌻 ";
+}
