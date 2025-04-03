@@ -1,0 +1,37 @@
+#au main{
+    width: 200px;
+    background-color: blue;
+    height: 100px;
+   
+}
+#au div{
+    width: 50%;
+    height: 25%;
+    background-color: grey;
+}
+#au main, #au div{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ru main{
+    background-color: green;
+    color: white;
+}
+#ru div{
+    background-color: red;
+    width: 20vw;
+    height: 20vh;
+}
+#em01 main{
+    font-size: 32px;
+}
+#em01 div{
+    /* font-size: 2rem; root element*/
+    font-size: 2em; 
+    /* parent element */
+}
+li::marker{
+    content:"👉";
+}

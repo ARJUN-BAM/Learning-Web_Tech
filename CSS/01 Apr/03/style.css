@@ -3,3 +3,62 @@
     padding: 0;
     box-sizing: border-box;
 }
+#b1:disabled{
+    background: red;
+    color: white;
+}
+#b1:enabled{
+    background: blue;
+    color: white;
+}
+#b1:hover{
+    background-color: red;
+    color: white;
+    padding: 20px;
+}
+#t1:focus{
+    background-color: black;
+    color: white;
+}
+#p1{
+    display: none;
+    width: 300px;
+}
+#b1:hover+p{
+    display: block;
+    color: grey;
+    background-color: gainsboro;
+}
+#t1:required{
+    background: red;
+}
+div p:first-child{
+    background-color: blue;
+    color: white;
+}
+div p:last-child{
+    background-color: red;
+    color: white;
+}
+div:nth-last-child(2){
+    background-color: purple;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+td:hover{
+    background-color: grey;
+    color: white;
+}
+td{
+    padding: 10px;
+}
+tr:nth-child(even)
+{
+    background-color: skyblue;
+}
+tr:nth-child(odd)
+{
+    background-color: lightgreen;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Units into the CSS</h1>
+    <fieldset>
+
+
+        <legend>Units Types</legend>
+        <ul>
+            <li><b>Absolute Unit</b>'
+            <ul>
+                <li><b>Note:</b> these units are the fixed unit which will not be changed and remains contants in any case.</li>
+                <li><b>px</b> (Pixel)</li>
+                <li><b>cm</b> (centimeter)</li>
+                <li><b>mm</b> (milimeter)</li>
+                <li><b>in</b> (inch)</li>
+                <li><b>pc</b> (same as pixel)</li>
+                <li><b>pt</b> (same as pixel)</li>
+            </ul></li>
+            <li><b>Relative Unit</b>
+            <ul>
+                <li><b>Note:</b> These units changes acorrding to the enviroment or platform, It has to take refrence with something.</li>
+                <li><b>%</b> (Percentage)</li>
+                <li><b>vh</b> (viewport height)</li>
+                <li><b>vw</b> (viewport width)</li>
+                <li><b>em</b> (Element) will specify how much times the value will be relative to the parent value. it will take refrence from the parent element.</li>
+                <li><b>rem</b> (Root Element) will specify how much times the value will be relative to the Root element's value which is html tag. it will take refrence from the root element.</li>
+                <li><b>vmax</b> between width and height which ever size is maximum it will take refrence from that.</li>
+                <li><b>vmax</b> between width and height which ever size is minimum it will take refrence from that.</li>
+                <li><b>Note:</b>The font size in the root element is 16px which is also a default for p and container.</li>
+                <li><b>Note:</b> Dont let the first generation child tag of body's size be defined by using percentage%. </li>
+                <li><b>Note:</b> We can also use % for specifying the font size but its not recommendated as it will be complex.</li>
+                <li><b>Note:</b> Default font size is 16px. </li>
+            </ul></li>
+        </ul>
+    </fieldset>
+
+    <br>
+    <hr>
+    <section id="au">
+        <h1>Using absolute Units :</h1>
+    <main>
+        main
+        <div>
+            div
+        </div>
+    </main>
+    </section>
+    <br><hr>
+    <section id="ru">
+        <h1>Using Relative Units :</h1>
+    <main>
+        main
+        <div>
+            div
+        </div>
+    </main>
+    </section>
+    <section id="em01">
+        <h1>Using Relative ( em&rem ) Units :</h1>
+    <main>
+        text
+        <div>
+        text
+        </div>
+    </main>
+    </section>
+    
+</body>
+</html>
