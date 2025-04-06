@@ -1,0 +1,40 @@
+/* *{
+    margin: 0;padding: 0;box-sizing: border-box;font-family: sans-serif;
+    } */
+fieldset{
+    font-size: 20px;
+}
+p{
+    margin: 0;
+    padding: 0;
+ }
+
+ section>div{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display: flex;
+    margin-top: 20px;
+    column-gap: 20px;  
+    font-size: 20px;
+}
+section main+div{ 
+    color:white;
+    background-color: blue;     
+}
+section main+div+div{  
+    color:white;
+    background-color: rgb(100, 20, 20);     
+}  
+section main+div+div+div{  
+    color:white;
+    background-color: #0f890c;
+}  
+section main+div+div+div+div{  
+    color:white;
+    background-color: hsl(240deg, 100%, 45%,0.8);
+}  
