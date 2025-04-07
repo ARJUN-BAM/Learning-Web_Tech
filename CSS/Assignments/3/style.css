@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+nav{
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    /* background-color: green; */
+    border-bottom: 1px solid gainsboro;
+    height: 9vh;
+    background-color: white;
+}
+section{
+    display: flex;
+    /* background-color: blue; */
+    width: 37.5%;
+    height: 100%;
+}
+section:not(#nav_bar){
+    width: 48%;
+    column-gap: 80px;
+    height: 100%;
+}
+div{
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+}
+#nav_bar>div>div{
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid white; */
+}
+
+#nav_bar>div>div:hover,section:not(#nav_bar)>div>div:hover{
+    border-bottom: 2px solid rgb(60, 59, 59);
+}
+
+#nav_bar>div>div>p{
+    font-size: 13px;
+}
+div>div>p>sup{
+    font-size: 8.5px;
+    color: red;
+}
+#logo{
+    width: 200px;
+}
+#nav_bar>div:not(#logo)
+{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+img{
+    width: 55px;
+    cursor: pointer;
+}
+div>input{
+    height: 35px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid gainsboro;
+    
+}
+section:not(#nav_bar)>#search{
+    width: 70%;
+    /* border: 1px solid white; */
+}
+section:not(#nav_bar)>div>div{
+    /* background-color: blue; */
+    height: 100%;
+}
+section:not(#nav_bar)>div:not(#search){
+    width: 305px;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+    column-gap: 5px;
+}
+section:not(#nav_bar)>div:not(#search)>div>p{
+    font-size: 11px;
+    width: 65px;
+    text-align: center;
+    border: 1px solid white;
+}
+#content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: green; */
+}
+main>p{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 11vh;
+    width: 100vw;
+    color: rgb(97, 95, 95);
+    background-color: rgb(255, 240, 240);
+    border-bottom: 1px solid gainsboro;
+}
+main>img,main>div+div>img{
+    width: 90vw;
+    border-radius: 3px;
+}
+main>div>img{
+    height: 50vh;
+    width: 47%;
+}
+main>img{
+    padding-top: 20px;
+}
+main>div+div>img{
+    object-fit: contain;
+    height: 150px;
+}
+#sticker{
+    width: 90vw;
+}
