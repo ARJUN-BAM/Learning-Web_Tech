@@ -1,0 +1,38 @@
+section *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 98vh;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section>div{
+    width: 100px;
+    height: 100px;
+    /* background-color: green; */
+    border: 15px black;
+    border-radius: 50%;
+    border-style: solid;
+    border-top-color: green;
+    animation: abc 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes abc{
+    to{
+        /* background-color: red; */
+        transform: rotate(360deg);
+    border-right-color: green;
+    border-left-color: green;
+    border-bottom-color: green;
+    border-top-color: black;
+
+
+        border-radius: 50%;
+        transition-duration: 1s;
+    }
+}
