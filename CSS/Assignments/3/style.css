@@ -6,13 +6,14 @@
 }
 nav{
     display: flex;
-    position: fixed;
+    position: sticky;
     left: 0;
-    right: 0;
+    top: 0;
     justify-content: space-between;
     /* background-color: green; */
     border-bottom: 1px solid gainsboro;
     height: 8.5vh;
+    box-shadow: 0px 3px 2px rgb(222, 218, 218);
     background-color: white;
 }
 nav section{
@@ -62,6 +63,19 @@ div>div>p>sup{
     justify-content: space-between;
     width: 75%;
 }
+@media  (max-width : 1500px) {
+   nav>section:nth-child(2){
+    display: none;
+   }
+   nav>#nav_bar{
+    position: relative;
+    width: 95%;
+    right: 0;
+    /* background-color: green; */
+    right: 0px;
+   }
+  
+}
 img{
     width: 55px;
     cursor: pointer;
@@ -104,8 +118,7 @@ nav>section:not(#nav_bar)>div:not(#search)>div>p{
 }
 #content>p{
     text-align: center;
-    padding-bottom: 15px;
-    padding-top: 10vh;
+    padding: 15px 0px;
     width: 100vw;
     color: rgb(97, 95, 95);
     background-color: rgb(255, 240, 240);
@@ -209,7 +222,7 @@ nav>section:not(#nav_bar)>div:not(#search)>div>p{
 }
 
 footer{
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 50px;
     width: 100%;
     height: 70vh;
