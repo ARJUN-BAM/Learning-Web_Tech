@@ -20,7 +20,7 @@ p::first-line{
     background-color: lightblue;
 }
 p::selection{
-    background-color: red;
+    background-color: green !important;
     color: white;
 }
 p::before{

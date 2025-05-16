@@ -1,0 +1,128 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body
+{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body main{
+    width: 15%;
+    z-index: 10000;
+    height: 25%;
+    /* border: 1px solid ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: move 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.box1{
+    width: 150px;
+    height: 75px;
+    border-radius: 75px 75px 0px 0px;
+    background-color: yellow;
+    animation: eat 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+}
+.box2{
+    width: 150px;
+    height: 75px;
+    border-radius: 0px 0px 75px 75px;
+    background-color: yellow;
+    animation: eat1 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+}
+@keyframes eat {
+    to{
+        transform: rotate(-25deg);
+    }
+}
+@keyframes eat1 {
+    to{
+        transform: rotate(25deg);
+    }
+}
+@keyframes move {
+    0% {
+        transform: translateX(0) scaleX(1);
+      }
+      49.999% {
+        transform: translateX(1650px) scaleX(1);
+      }
+      50% {
+        transform: translateX(1650px) scaleX(-1); /* instant flip here */
+      }
+      100% {
+        transform: translateX(0px) scaleX(-1);
+      }
+}
+body>div{
+    width: 60vw;
+    height:100px;
+    /* border: 1px solid black; */
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 100px;
+    position: relative;
+}
+body>div>div{
+    animation: round;
+    /* position: absolute; */
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: infinite; */
+}
+body>div>div:nth-child(1)
+{
+    animation-delay: 1s;
+    animation-duration: 0.01s;
+}
+body>div>div:nth-child(2)
+{
+    animation-delay: 1.4s;
+    animation-duration: 0.01s;
+}
+body>div>div:nth-child(3)
+{
+    animation-delay: 1.9s; 
+    animation-duration: 0.01s;
+}
+body>div>div:nth-child(4)
+{
+    animation-delay: 2.4s;
+    animation-duration: 0.01s;
+}
+body>div>div:nth-child(5)
+{
+    animation-delay: 2.9s;
+    animation-duration: 0.01s;
+}
+@keyframes round {
+    0% {
+        opacity: 1;
+        visibility: visible;
+      }
+      25% {
+        opacity: 0; /* actual animation ends here (at 1s mark) */
+      }
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+}

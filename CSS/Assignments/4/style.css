@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+nav{
+    width: 100vw;
+    height: 15vh;
+    background-color: red;
+    display: flex;
+}
+nav>main{
+    width: 50%;
+    border: 1px solid white;
+    height: 90%;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+
+}
+main>div{
+    width: 30%;
+    height: 80%;
+    background-color: blue;
+}
